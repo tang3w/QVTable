@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QVTable</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/QVTable.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="toolbar">
+            <button id="remove">Remove</button>
+            <button id="merge">Merge</button>
+            <button id="sliceH">Slice In Horizontal</button>
+            <button id="sliceV">Slice In Vertical</button>
+            <br />
+            <button id="newRowA">New Row After</button>
+            <button id="newRowB">New Row Before</button>
+            <button id="newColA">New Col After</button>
+            <button id="newColB">New Col Before</button>
+        </div>
+        <table id="qv">
+            <tr>
+                <td rowspan="2" colspan="4">A</td>
+                <td>B</td>
+                <td rowspan="3">C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td rowspan="2">E</td>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+                <td rowspan="2">I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
